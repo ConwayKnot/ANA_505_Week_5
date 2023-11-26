@@ -51,7 +51,7 @@ piping<-mysample %>%
   print()
 
 #TASK: revise this code chunk using piping
-mysample %>% arrange %>% filter(spi1<80) %>% rename(Index1 = spi1, Index2 = spi2) %>% select(Index1, Index2, team1, team2) %>% summary %>% print
+mysample %>% arrange(date) %>% filter(spi1<80) %>% rename(Index1 = spi1, Index2 = spi2) %>% select(Index1, Index2, team1, team2) %>% summary %>% print
 
 #mysample2<-mysample
 #arrange(mysample2, date)
